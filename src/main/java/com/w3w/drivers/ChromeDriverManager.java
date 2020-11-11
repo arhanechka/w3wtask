@@ -7,6 +7,7 @@ public class ChromeDriverManager extends DriverManager{
     public void createDriver(){
         ChromeOptions options = new ChromeOptions();
         System.setProperty("webdriver.chrome.driver", "./drivers/chromedriver.exe");
+        options.addArguments("--lang=en-EN");
         options.addArguments("start-maximized");
         this.webDriver = new ChromeDriver(options);
     }

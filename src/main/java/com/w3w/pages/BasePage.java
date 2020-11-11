@@ -3,6 +3,7 @@ package com.w3w.pages;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class BasePage {
@@ -28,5 +29,13 @@ public class BasePage {
     protected void printText(WebElement element, String text){
         element.click();
         element.sendKeys(text);
+    }
+
+    protected void waitForElementToAppear(WebElement element) {
+        wait.until(ExpectedConditions.visibilityOf(element));
+    }
+
+    protected void waitForElementTextRefreshed(WebElement element, String retrievedText) {
+        wait.until(ExpectedConditions.not(ExpectedConditions.textToBePresentInElement(element,retrievedText)));
     }
 }
