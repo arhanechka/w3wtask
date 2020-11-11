@@ -1,0 +1,232 @@
+{
+  "statistic" : {
+    "failed" : 0,
+    "broken" : 0,
+    "skipped" : 0,
+    "passed" : 6,
+    "unknown" : 0,
+    "total" : 6
+  },
+  "time" : {
+    "minDuration" : 18,
+    "maxDuration" : 10250,
+    "sumDuration" : 28954,
+    "start" : 1605127439890,
+    "stop" : 1605127474920,
+    "duration" : 35030
+  },
+  "children" : [ {
+    "uid" : "6cd38794d03ae3d7",
+    "name" : "NavigationTest",
+    "time" : {
+      "minDuration" : 18,
+      "maxDuration" : 3205,
+      "sumDuration" : 8494,
+      "start" : 1605127439890,
+      "stop" : 1605127448536,
+      "duration" : 8646
+    },
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 4,
+      "unknown" : 0,
+      "total" : 4
+    },
+    "type" : "TestGroupNode",
+    "children" : [ {
+      "uid" : "4c87e7766f131aac",
+      "name" : "Move pegman on the map and check map representation minimized",
+      "time" : {
+        "minDuration" : 3205,
+        "maxDuration" : 3205,
+        "sumDuration" : 3205,
+        "start" : 1605127445331,
+        "stop" : 1605127448536,
+        "duration" : 3205
+      },
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 1,
+        "unknown" : 0,
+        "total" : 1
+      },
+      "type" : "TestGroupNode",
+      "children" : [ {
+        "uid" : "b91951dbbdc2ae5b",
+        "name" : "Move prgman on the map and check map representation minimized",
+        "time" : {
+          "start" : 1605127445331,
+          "stop" : 1605127448536,
+          "duration" : 3205
+        },
+        "status" : "passed",
+        "flaky" : false,
+        "type" : "TestCaseNode"
+      } ]
+    }, {
+      "uid" : "4b9529ca981c7217",
+      "name" : "Go to navigation link and check the title of the page",
+      "time" : {
+        "minDuration" : 18,
+        "maxDuration" : 18,
+        "sumDuration" : 18,
+        "start" : 1605127439890,
+        "stop" : 1605127439908,
+        "duration" : 18
+      },
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 1,
+        "unknown" : 0,
+        "total" : 1
+      },
+      "type" : "TestGroupNode",
+      "children" : [ {
+        "uid" : "7b21a19fb005398e",
+        "name" : "Go to navigation link and check the title of the page",
+        "time" : {
+          "start" : 1605127439890,
+          "stop" : 1605127439908,
+          "duration" : 18
+        },
+        "status" : "passed",
+        "flaky" : false,
+        "type" : "TestCaseNode"
+      } ]
+    }, {
+      "uid" : "a1116238a6d74ae8",
+      "name" : "Tap random place on map, check search result changed, return to previous tile and check result",
+      "time" : {
+        "minDuration" : 2852,
+        "maxDuration" : 2852,
+        "sumDuration" : 2852,
+        "start" : 1605127442475,
+        "stop" : 1605127445327,
+        "duration" : 2852
+      },
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 1,
+        "unknown" : 0,
+        "total" : 1
+      },
+      "type" : "TestGroupNode",
+      "children" : [ {
+        "uid" : "bfb28d515e175103",
+        "name" : "Tap random place on map, check search result changed, return to previous tile and check result",
+        "time" : {
+          "start" : 1605127442475,
+          "stop" : 1605127445327,
+          "duration" : 2852
+        },
+        "status" : "passed",
+        "flaky" : false,
+        "type" : "TestCaseNode"
+      } ]
+    }, {
+      "uid" : "2cbabd7293bf8c2a",
+      "name" : "Type address in search field and check result",
+      "time" : {
+        "minDuration" : 2419,
+        "maxDuration" : 2419,
+        "sumDuration" : 2419,
+        "start" : 1605127440049,
+        "stop" : 1605127442468,
+        "duration" : 2419
+      },
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 1,
+        "unknown" : 0,
+        "total" : 1
+      },
+      "type" : "TestGroupNode",
+      "children" : [ {
+        "uid" : "fd7ff7855ea8379f",
+        "name" : "Type address in search field and check result",
+        "time" : {
+          "start" : 1605127440049,
+          "stop" : 1605127442468,
+          "duration" : 2419
+        },
+        "status" : "passed",
+        "flaky" : false,
+        "type" : "TestCaseNode"
+      } ]
+    } ]
+  }, {
+    "uid" : "a856dc614b29253d",
+    "name" : "Default feature",
+    "time" : {
+      "minDuration" : 10210,
+      "maxDuration" : 10250,
+      "sumDuration" : 20460,
+      "start" : 1605127454368,
+      "stop" : 1605127474920,
+      "duration" : 20552
+    },
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 2,
+      "unknown" : 0,
+      "total" : 2
+    },
+    "type" : "TestGroupNode",
+    "children" : [ {
+      "uid" : "169ac232aa5a118e",
+      "name" : "Search for w3w string and check words uniqueness",
+      "time" : {
+        "minDuration" : 10210,
+        "maxDuration" : 10250,
+        "sumDuration" : 20460,
+        "start" : 1605127454368,
+        "stop" : 1605127474920,
+        "duration" : 20552
+      },
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 2,
+        "unknown" : 0,
+        "total" : 2
+      },
+      "type" : "TestGroupNode",
+      "children" : [ {
+        "uid" : "9688c7ac8694cb7f",
+        "name" : "checkWordsUniqueness",
+        "time" : {
+          "start" : 1605127454368,
+          "stop" : 1605127464618,
+          "duration" : 10250
+        },
+        "status" : "passed",
+        "flaky" : false,
+        "type" : "TestCaseNode"
+      }, {
+        "uid" : "f78a8792bd0959ec",
+        "name" : "checkWordsUniqueness",
+        "time" : {
+          "start" : 1605127464710,
+          "stop" : 1605127474920,
+          "duration" : 10210
+        },
+        "status" : "passed",
+        "flaky" : false,
+        "type" : "TestCaseNode"
+      } ]
+    } ]
+  } ]
+}

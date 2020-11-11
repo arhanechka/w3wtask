@@ -1,0 +1,61 @@
+[ {
+  "uid" : "b91951dbbdc2ae5b",
+  "name" : "Move prgman on the map and check map representation minimized",
+  "time" : {
+    "start" : 1605127445331,
+    "stop" : 1605127448536,
+    "duration" : 3205
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "9688c7ac8694cb7f",
+  "name" : "checkWordsUniqueness",
+  "time" : {
+    "start" : 1605127454368,
+    "stop" : 1605127464618,
+    "duration" : 10250
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "7b21a19fb005398e",
+  "name" : "Go to navigation link and check the title of the page",
+  "time" : {
+    "start" : 1605127439890,
+    "stop" : 1605127439908,
+    "duration" : 18
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "bfb28d515e175103",
+  "name" : "Tap random place on map, check search result changed, return to previous tile and check result",
+  "time" : {
+    "start" : 1605127442475,
+    "stop" : 1605127445327,
+    "duration" : 2852
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "f78a8792bd0959ec",
+  "name" : "checkWordsUniqueness",
+  "time" : {
+    "start" : 1605127464710,
+    "stop" : 1605127474920,
+    "duration" : 10210
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "fd7ff7855ea8379f",
+  "name" : "Type address in search field and check result",
+  "time" : {
+    "start" : 1605127440049,
+    "stop" : 1605127442468,
+    "duration" : 2419
+  },
+  "status" : "passed",
+  "severity" : "normal"
+} ]

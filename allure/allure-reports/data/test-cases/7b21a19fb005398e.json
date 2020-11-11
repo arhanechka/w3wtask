@@ -1,0 +1,120 @@
+{
+  "uid" : "7b21a19fb005398e",
+  "name" : "Go to navigation link and check the title of the page",
+  "fullName" : "NavigationTest.navigateToLinkTest",
+  "historyId" : "2fb202f1b10301a102d4968789025f31",
+  "time" : {
+    "start" : 1605127439890,
+    "stop" : 1605127439908,
+    "duration" : 18
+  },
+  "status" : "passed",
+  "statusDetails" : {
+    "flaky" : false
+  },
+  "beforeStages" : [ {
+    "name" : "setUp",
+    "time" : {
+      "start" : 1605127433021,
+      "stop" : 1605127439837,
+      "duration" : 6816
+    },
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "initPages",
+      "time" : {
+        "start" : 1605127439697,
+        "stop" : 1605127439755,
+        "duration" : 58
+      },
+      "status" : "passed",
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ]
+    }, {
+      "name" : "setAllureEnvironment",
+      "time" : {
+        "start" : 1605127439756,
+        "stop" : 1605127439835,
+        "duration" : 79
+      },
+      "status" : "passed",
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ]
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 2,
+    "attachmentsCount" : 0
+  } ],
+  "afterStages" : [ {
+    "name" : "tearDown",
+    "time" : {
+      "start" : 1605127448538,
+      "stop" : 1605127449221,
+      "duration" : 683
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0
+  } ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "NavigationTest"
+  }, {
+    "name" : "testClass",
+    "value" : "NavigationTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "navigateToLinkTest"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Surefire suite"
+  }, {
+    "name" : "suite",
+    "value" : "Surefire test"
+  }, {
+    "name" : "subSuite",
+    "value" : "NavigationTest"
+  }, {
+    "name" : "host",
+    "value" : "Arhanechka"
+  }, {
+    "name" : "thread",
+    "value" : "46472@Arhanechka.main(1)"
+  }, {
+    "name" : "framework",
+    "value" : "testng"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "story",
+    "value" : "Go to navigation link and check the title of the page"
+  }, {
+    "name" : "epic",
+    "value" : "NavigationTest"
+  }, {
+    "name" : "feature",
+    "value" : "NavigationTest"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "extra" : {
+    "severity" : "normal",
+    "categories" : [ ]
+  }
+}

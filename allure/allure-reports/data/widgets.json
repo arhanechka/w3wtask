@@ -1,0 +1,56 @@
+{
+  "summary" : {
+    "reportName" : "Allure Report",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 6,
+      "unknown" : 0,
+      "total" : 6
+    },
+    "time" : {
+      "minDuration" : 18,
+      "maxDuration" : 10250,
+      "sumDuration" : 28954,
+      "start" : 1605127439890,
+      "stop" : 1605127474920,
+      "duration" : 35030
+    }
+  },
+  "environment" : [ {
+    "values" : [ "What 3 Words tests" ],
+    "name" : "name"
+  }, {
+    "values" : [ "CHROME" ],
+    "name" : "Browser"
+  } ],
+  "history-trend" : [ {
+    "failed" : 0,
+    "broken" : 0,
+    "skipped" : 0,
+    "passed" : 6,
+    "unknown" : 0,
+    "total" : 6
+  } ],
+  "behaviors" : {
+    "total" : 1,
+    "items" : [ {
+      "name" : "NavigationTest",
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 4,
+        "unknown" : 0,
+        "total" : 4
+      }
+    } ]
+  },
+  "executors" : [ {
+    "name" : "Maven",
+    "type" : "maven",
+    "buildName" : "W3W test task"
+  } ],
+  "launches" : [ ]
+}
