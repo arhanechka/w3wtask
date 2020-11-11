@@ -4,8 +4,14 @@ import org.testng.annotations.Test;
 
 public class NavigationTest extends BaseTest{
 
-    @Test
+    @Test(priority = 1, description = "Go to navigation link and check the title of the page")
     public void navigateToLinkTest(){
         Assert.assertTrue(mainMapPage.getPageTitle().equals(Data.MAP_PAGE_TITLE), "Page title should be " + Data.MAP_PAGE_TITLE);
+    }
+
+    @Test(priority = 2, description = "Type address in search field and check result")
+    public void searchDestinationTest(){
+        mainMapPage.clickSearchLocation()
+                .printSearchText(Data.SEARCH_DESTINATION);
     }
 }

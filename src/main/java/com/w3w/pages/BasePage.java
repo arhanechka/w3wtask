@@ -1,6 +1,7 @@
 package com.w3w.pages;
 
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
@@ -22,5 +23,10 @@ public class BasePage {
 
     public String getPageTitle(){
         return  driver.getTitle();
+    }
+
+    protected void printText(WebElement element, String text){
+        element.click();
+        element.sendKeys(text);
     }
 }
