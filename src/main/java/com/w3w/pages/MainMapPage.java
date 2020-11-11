@@ -1,10 +1,12 @@
 package com.w3w.pages;
 
+import com.w3w.utils.Utils;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
 import java.util.List;
+import java.util.stream.Collectors;
 
 public class MainMapPage extends BasePage {
 
@@ -26,11 +28,17 @@ public class MainMapPage extends BasePage {
     @FindBy(className = "SearchPanel-Location")
     private List<WebElement> searchResultsTextList;
 
+    @FindBy(className = "SearchPanel-LocationAddress")
+    private List<WebElement> searchAddressesResultsList;
+
     @FindBy(className = "gm-svpc")
     private WebElement pegmanIcon;
 
     @FindBy(className = "CloseStreetView")
     private WebElement returnToFullViewLabel;
+
+    @FindBy(css = "button[class='MuiButtonBase-root MuiIconButton-root SearchPanel-InputButton']")
+    private WebElement searchPanelCloseButton;
 
     public MainMapPage(WebDriver driver) {
         super(driver);
@@ -83,5 +91,29 @@ public class MainMapPage extends BasePage {
 
     public void clickReturnToFullScreenViewLabel(){
         clickWithDelay(returnToFullViewLabel);
+    }
+
+
+    private List<String> getTextSearchResults() {
+        return searchResultsTextList.stream().map(el -> el.getText()).collect(Collectors.toList());
+    }
+
+    private List<String> getTextAddressesSearchResults() {
+        return searchAddressesResultsList.stream().map(el -> el.getText()).collect(Collectors.toList());
+    }
+
+    public boolean isSearchResultUnique() {
+        return Utils.checkWordsSequenceUnique(getTextSearchResults());
+    }
+
+    public boolean isSearchAddressesResultUnique() {
+        return Utils.checkWordsSequenceUnique(getTextAddressesSearchResults());
+    }
+
+    public MainMapPage clickCloseSearch() {
+        if (searchPanelCloseButton.isDisplayed()) {
+            searchPanelCloseButton.click();
+        }
+        return this;
     }
 }

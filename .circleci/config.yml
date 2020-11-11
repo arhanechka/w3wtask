@@ -18,4 +18,4 @@ workflows:
               google-chrome --version
               chromedriver --version
             name: Check install
-          - maven/test # checkout, build, test, and upload test results
+              - maven/test # checkout, build, test, and upload test results
