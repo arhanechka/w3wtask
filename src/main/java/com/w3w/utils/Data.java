@@ -5,4 +5,5 @@ public interface Data {
     String MAP_PAGE_TITLE = "what3words /// The simplest way to talk about location";
     String SEARCH_DESTINATION = "Waterloo Station";
     String EXPECTED_DESTINATION_IN_3WORDS = "sank.spits.hulk";
+    String RANDOM_LOCATION = "into.helps.ledge";
 }

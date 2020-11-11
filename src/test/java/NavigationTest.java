@@ -18,4 +18,26 @@ public class NavigationTest extends BaseTest {
         Assert.assertTrue(mainMapPage.getSearchFieldText().equals(Data.EXPECTED_DESTINATION_IN_3WORDS), "Search test field should be equal " + Data.EXPECTED_DESTINATION_IN_3WORDS
                 + " but was " + mainMapPage.getSearchFieldText());
     }
+
+    @Test(priority = 3, description = "Tap random place on map, check search result changed, return to previous tile and check result")
+    public void tapRandomPlaceOnMapAndCheckSearchResultTest() {
+        mainMapPage
+                .clickRandomPlaceOnMap()
+                .waitForSearchResultsChanged(Data.EXPECTED_DESTINATION_IN_3WORDS);
+        Assert.assertFalse(mainMapPage.getSearchFieldText().equals(Data.EXPECTED_DESTINATION_IN_3WORDS), "Search test field should be equal " + Data.EXPECTED_DESTINATION_IN_3WORDS
+                + " but was " + mainMapPage.getSearchFieldText());
+        mainMapPage
+                .clickMap()
+                .waitForSearchResultsChanged(Data.RANDOM_LOCATION);
+        Assert.assertTrue(mainMapPage.getSearchFieldText().equals(Data.EXPECTED_DESTINATION_IN_3WORDS), "Search test field should be equal " + Data.EXPECTED_DESTINATION_IN_3WORDS
+                + " but was " + mainMapPage.getSearchFieldText());
+    }
+
+    @Test(priority = 4, description = "Move prgman on the map and check map representation minimized")
+    public void movingPegmanAndCheckMapMinimizedTest() {
+        mainMapPage
+                .dragPegmanToTheScreen();
+        Assert.assertTrue(mainMapPage.isSmallViewMapVisible(), "Map representation should be minimized");
+        mainMapPage.clickReturnToFullScreenViewLabel();
+    }
 }

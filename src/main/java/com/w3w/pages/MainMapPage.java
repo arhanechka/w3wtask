@@ -11,6 +11,9 @@ public class MainMapPage extends BasePage {
     @FindBy(className = "MapGrid")
     private WebElement mapGridLayout;
 
+    @FindBy(css = "div[class='MapGrid MapGrid_visible']")
+    private WebElement mapGridSmallViewLayout;
+
     @FindBy(className = "ThreeWordAddress-Content")
     private WebElement searchPanel;
 
@@ -22,6 +25,12 @@ public class MainMapPage extends BasePage {
 
     @FindBy(className = "SearchPanel-Location")
     private List<WebElement> searchResultsTextList;
+
+    @FindBy(className = "gm-svpc")
+    private WebElement pegmanIcon;
+
+    @FindBy(className = "CloseStreetView")
+    private WebElement returnToFullViewLabel;
 
     public MainMapPage(WebDriver driver) {
         super(driver);
@@ -47,9 +56,32 @@ public class MainMapPage extends BasePage {
         waitForElementTextRefreshed(searchTextField, retrievedText);
     }
 
-
     public String getSearchFieldText() {
         waitForElementToAppear(searchTextField);
         return searchTextField.getText();
+    }
+
+    public MainMapPage clickRandomPlaceOnMap() {
+        clickOnElementByCoordinatesWithOffset(mapGridLayout, 50, 50);
+        return this;
+    }
+
+    public MainMapPage clickMap() {
+        clickWithDelay(mapGridLayout);
+        return this;
+    }
+
+    public MainMapPage dragPegmanToTheScreen() {
+        dragElementToTheScreen(pegmanIcon, mapGridLayout);
+        return this;
+    }
+
+    public boolean isSmallViewMapVisible() {
+        return mapGridSmallViewLayout.isDisplayed()
+                && returnToFullViewLabel.isDisplayed();
+    }
+
+    public void clickReturnToFullScreenViewLabel(){
+        clickWithDelay(returnToFullViewLabel);
     }
 }
