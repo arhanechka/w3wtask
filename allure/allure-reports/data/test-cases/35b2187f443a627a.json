@@ -1,0 +1,89 @@
+{
+  "uid" : "35b2187f443a627a",
+  "name" : "Move prgman on the map and check map representation minimized",
+  "fullName" : "NavigationTest.movingPegmanAndCheckMapMinimizedTest",
+  "historyId" : "9084a949fe52dac08a3a32cf9008e159",
+  "time" : {
+    "start" : 1605106810636,
+    "stop" : 1605106813516,
+    "duration" : 2880
+  },
+  "status" : "passed",
+  "statusDetails" : {
+    "flaky" : false
+  },
+  "beforeStages" : [ {
+    "name" : "setUp",
+    "time" : {
+      "start" : 1605106798695,
+      "stop" : 1605106804948,
+      "duration" : 6253
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0
+  } ],
+  "afterStages" : [ {
+    "name" : "tearDown",
+    "time" : {
+      "start" : 1605106813519,
+      "stop" : 1605106814205,
+      "duration" : 686
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0
+  } ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "NavigationTest"
+  }, {
+    "name" : "testClass",
+    "value" : "NavigationTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "movingPegmanAndCheckMapMinimizedTest"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Surefire suite"
+  }, {
+    "name" : "suite",
+    "value" : "Surefire test"
+  }, {
+    "name" : "subSuite",
+    "value" : "NavigationTest"
+  }, {
+    "name" : "host",
+    "value" : "Arhanechka"
+  }, {
+    "name" : "thread",
+    "value" : "15224@Arhanechka.main(1)"
+  }, {
+    "name" : "framework",
+    "value" : "testng"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "story",
+    "value" : "Move prgman on the map and check map representation minimized"
+  }, {
+    "name" : "epic",
+    "value" : "NavigationTest"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "extra" : {
+    "severity" : "normal",
+    "categories" : [ ]
+  }
+}
