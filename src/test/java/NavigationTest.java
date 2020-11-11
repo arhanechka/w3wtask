@@ -40,7 +40,7 @@ public class NavigationTest extends BaseTest {
     }
 
     @Test(priority = 4, description = "Move prgman on the map and check map representation minimized")
-    @Story("Move prgman on the map and check map representation minimized")
+    @Story("Move pegman on the map and check map representation minimized")
     public void movingPegmanAndCheckMapMinimizedTest() {
         mainMapPage
                 .dragPegmanToTheScreen();
