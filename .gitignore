@@ -1,3 +1,9 @@
 .idea/
 *.iml
-target/
+target/allure-results
+target/classes
+target/generated-sources
+target/generated-test-sources
+target/maven-status
+target/test-classes
+.allure

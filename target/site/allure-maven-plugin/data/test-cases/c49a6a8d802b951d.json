@@ -1,0 +1,117 @@
+{
+  "uid" : "c49a6a8d802b951d",
+  "name" : "Type address in search field and check result",
+  "fullName" : "NavigationTest.searchDestinationTest",
+  "historyId" : "f5254726564c26ebee9c6a08d052b7a9",
+  "time" : {
+    "start" : 1605105689846,
+    "stop" : 1605105692347,
+    "duration" : 2501
+  },
+  "status" : "passed",
+  "statusDetails" : {
+    "flaky" : false
+  },
+  "beforeStages" : [ {
+    "name" : "setUp",
+    "time" : {
+      "start" : 1605105683856,
+      "stop" : 1605105689623,
+      "duration" : 5767
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "statusDetails" : {
+      "flaky" : false
+    },
+    "steps" : [ {
+      "name" : "assertSearchFieldTextMatched",
+      "time" : {
+        "start" : 1605105691706,
+        "stop" : 1605105692346,
+        "duration" : 640
+      },
+      "status" : "passed",
+      "hasContent" : true,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "condition",
+        "value" : "true"
+      } ]
+    } ],
+    "attachments" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 1,
+    "attachmentsCount" : 0
+  },
+  "afterStages" : [ {
+    "name" : "tearDown",
+    "time" : {
+      "start" : 1605105698225,
+      "stop" : 1605105698900,
+      "duration" : 675
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0
+  } ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "NavigationTest"
+  }, {
+    "name" : "testClass",
+    "value" : "NavigationTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "searchDestinationTest"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Surefire suite"
+  }, {
+    "name" : "suite",
+    "value" : "Surefire test"
+  }, {
+    "name" : "subSuite",
+    "value" : "NavigationTest"
+  }, {
+    "name" : "host",
+    "value" : "Arhanechka"
+  }, {
+    "name" : "thread",
+    "value" : "28832@Arhanechka.main(1)"
+  }, {
+    "name" : "framework",
+    "value" : "testng"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "story",
+    "value" : "Type address in search field and check result"
+  }, {
+    "name" : "epic",
+    "value" : "NavigationTest"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "extra" : {
+    "severity" : "normal",
+    "categories" : [ ]
+  }
+}

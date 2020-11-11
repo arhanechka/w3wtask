@@ -3,6 +3,7 @@ import com.w3w.drivers.DriverManagerFactory;
 import com.w3w.drivers.DriverTypes;
 import com.w3w.pages.MainMapPage;
 import com.w3w.utils.Data;
+import io.qameta.allure.Attachment;
 import org.openqa.selenium.Cookie;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;

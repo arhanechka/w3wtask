@@ -1,0 +1,126 @@
+{
+  "statistic" : {
+    "failed" : 0,
+    "broken" : 0,
+    "skipped" : 0,
+    "passed" : 4,
+    "unknown" : 0,
+    "total" : 4
+  },
+  "time" : {
+    "minDuration" : 17,
+    "maxDuration" : 3124,
+    "sumDuration" : 8374,
+    "start" : 1605105689691,
+    "stop" : 1605105698223,
+    "duration" : 8532
+  },
+  "children" : [ {
+    "uid" : "f1f3c308a7c46b6b",
+    "name" : "Surefire suite",
+    "time" : {
+      "minDuration" : 17,
+      "maxDuration" : 3124,
+      "sumDuration" : 8374,
+      "start" : 1605105689691,
+      "stop" : 1605105698223,
+      "duration" : 8532
+    },
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 4,
+      "unknown" : 0,
+      "total" : 4
+    },
+    "type" : "TestGroupNode",
+    "children" : [ {
+      "uid" : "f1cbf2d085f65a57",
+      "name" : "Surefire test",
+      "time" : {
+        "minDuration" : 17,
+        "maxDuration" : 3124,
+        "sumDuration" : 8374,
+        "start" : 1605105689691,
+        "stop" : 1605105698223,
+        "duration" : 8532
+      },
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 4,
+        "unknown" : 0,
+        "total" : 4
+      },
+      "type" : "TestGroupNode",
+      "children" : [ {
+        "uid" : "29a1c3d56523aa46",
+        "name" : "NavigationTest",
+        "time" : {
+          "minDuration" : 17,
+          "maxDuration" : 3124,
+          "sumDuration" : 8374,
+          "start" : 1605105689691,
+          "stop" : 1605105698223,
+          "duration" : 8532
+        },
+        "statistic" : {
+          "failed" : 0,
+          "broken" : 0,
+          "skipped" : 0,
+          "passed" : 4,
+          "unknown" : 0,
+          "total" : 4
+        },
+        "type" : "TestGroupNode",
+        "children" : [ {
+          "uid" : "c49a6a8d802b951d",
+          "name" : "Type address in search field and check result",
+          "time" : {
+            "start" : 1605105689846,
+            "stop" : 1605105692347,
+            "duration" : 2501
+          },
+          "status" : "passed",
+          "flaky" : false,
+          "type" : "TestCaseNode"
+        }, {
+          "uid" : "5730cd505b062d87",
+          "name" : "Tap random place on map, check search result changed, return to previous tile and check result",
+          "time" : {
+            "start" : 1605105692363,
+            "stop" : 1605105695095,
+            "duration" : 2732
+          },
+          "status" : "passed",
+          "flaky" : false,
+          "type" : "TestCaseNode"
+        }, {
+          "uid" : "502441fc8135b83c",
+          "name" : "Go to navigation link and check the title of the page",
+          "time" : {
+            "start" : 1605105689691,
+            "stop" : 1605105689708,
+            "duration" : 17
+          },
+          "status" : "passed",
+          "flaky" : false,
+          "type" : "TestCaseNode"
+        }, {
+          "uid" : "4c6048c0969fe35a",
+          "name" : "Move prgman on the map and check map representation minimized",
+          "time" : {
+            "start" : 1605105695099,
+            "stop" : 1605105698223,
+            "duration" : 3124
+          },
+          "status" : "passed",
+          "flaky" : false,
+          "type" : "TestCaseNode"
+        } ]
+      } ]
+    } ]
+  } ]
+}
