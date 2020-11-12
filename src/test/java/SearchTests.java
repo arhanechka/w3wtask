@@ -19,9 +19,19 @@ public class SearchTests extends BaseTest {
     @Test(dataProvider = "searchStrings")
     @Story("Search for w3w string and check words uniqueness")
     @Parameters({"searchString"})
-    public void checkWordsUniqueness(String searchString) {
+    public void checkWordsUniquenessTest(String searchString) {
         mainMapPage
                 .printSearchText(searchString);
+        checkTextResultsUniqueness();
+        checkAddressResultsUniqueness();
+    }
+
+    @Test
+    @Story("Search for wrong w3w string and check words suggestions")
+    public void searchThreeWordsSuggestionFotWrongWordsTest() {
+        mainMapPage
+                .printSearchText("goood.place.live");
+        checkSearchResultsSize();
         checkTextResultsUniqueness();
         checkAddressResultsUniqueness();
     }
@@ -34,6 +44,11 @@ public class SearchTests extends BaseTest {
     @Step
     private void checkAddressResultsUniqueness(){
         Assert.assertTrue(mainMapPage.isSearchAddressesResultUnique(), "Addresses results data should be unique");
+    }
+
+    @Step
+    private void checkSearchResultsSize(){
+        Assert.assertTrue(mainMapPage.checkSearchResultsSizeEqualsThree(), "Search results size should have correct length");
     }
 
     @AfterMethod

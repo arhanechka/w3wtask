@@ -17,5 +17,6 @@
     * number of possible options (3)
     * uniqueness of words sequences
     * uniqueness of addresses, connected with sequences
+2. Type 3 words with grammar mistake and check unique suggestions
 
 

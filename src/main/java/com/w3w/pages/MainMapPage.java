@@ -40,6 +40,9 @@ public class MainMapPage extends BasePage {
     @FindBy(css = "button[class='MuiButtonBase-root MuiIconButton-root SearchPanel-InputButton']")
     private WebElement searchPanelCloseButton;
 
+    @FindBy(className = "SearchPanel-ResultItem")
+    private List<WebElement> searchItemsResultsList;
+
     public MainMapPage(WebDriver driver) {
         super(driver);
         init(driver);
@@ -95,11 +98,11 @@ public class MainMapPage extends BasePage {
 
 
     private List<String> getTextSearchResults() {
-        return searchResultsTextList.stream().map(el -> el.getText()).collect(Collectors.toList());
+        return searchResultsTextList.stream().map(WebElement::getText).collect(Collectors.toList());
     }
 
     private List<String> getTextAddressesSearchResults() {
-        return searchAddressesResultsList.stream().map(el -> el.getText()).collect(Collectors.toList());
+        return searchAddressesResultsList.stream().map(WebElement::getText).collect(Collectors.toList());
     }
 
     public boolean isSearchResultUnique() {
@@ -116,4 +119,9 @@ public class MainMapPage extends BasePage {
         }
         return this;
     }
+
+    public boolean checkSearchResultsSizeEqualsThree() {
+        return searchItemsResultsList.size() == 3;
+    }
+
 }
